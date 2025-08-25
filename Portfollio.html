@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PORTFOLIO</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">PORTFOLIO
+        </div>
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">HOME</a>
+            <a href="#div1" style="--i:2" onclick="aboutus()">ABOUT ME</a>
+            <a href="#skills" style="--i:3">SKILLS</a>
+            <a href="#" style="--i:4">PORTFOLIO</a>
+            <a href="#contact-box" style="--i:5">CONTACT</a>
+        </nav>
+    </header>
+
+
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, it's me</h3><br>
+            <h1 id="name">Vibin Richard</h1><br>
+            <h3>And I am a <span>Student</span></h3><br>
+            <p id="info">Hello, I'm Vibin Richard, a dedicated student pursuing my engineering education of B.TECH IT, at Sri Shakthi Institute of Engineering and Technology, where I'm immersed in a dynamic learning environment that fuels my passion for innovation
+                and drives my aspirations to excel in the field of engineering."</p>
+            <br>
+            <div class="socialmedia">
+
+                 <a href="https://www.instagram.com/vibin_kord" target="_blank" >
+                <img src="instagram.png" alt="Instagram" class="img">
+                    </a>
+
+                <a href="https://github.com/vibinkord" target="_blank">
+                <img src="gitlogo.png" alt="GitHub" class="img">
+                    </a>
+
+                <a href="https://www.linkedin.com/in/vibin-richard-8186461b4/" target="_blank">
+                     <img src="linkedin.png" alt="LinkedIn" class="img">
+                    </a>
+</div>
+        </div>
+        <div class="home-img">
+            <img src="resume pic.jpg" alt="">
+        </div>
+    </section>
+    <div id="div1">
+        <h1 id="about1" style="padding: 10px; color: black;">About</h1>
+        <br>
+        <p id="me" style="margin-top: 20px; margin-bottom: 20px; color: black; line-height: 1.8;">
+  <span>
+    Hello, I'm Vibin Richard D. I completed my schooling at Stanes Anglo Indian Higher Secondary School, where I built a solid academic foundation.<br><br>
+
+    I am currently pursuing a Bachelor's degree in Information Technology at Sri Shakthi Institute of Engineering and Technology. I consider myself a consistent learner, always eager to embrace challenges and grow through continuous improvement.<br><br>
+
+    My primary interests lie in the field of programming and technology. While I identify as an average coder, I am driven by a strong desire to refine my skills through regular practice and real-world projects.<br><br>
+
+    Outside of academics, I am passionate about fitness and maintain an active lifestyle as a dedicated gym-goer. I believe that physical well-being complements mental growth, and this discipline reflects my commitment to balance and perseverance.<br><br>
+
+    I am always open to new experiences and opportunities that expand my knowledge. With a mindset geared toward lifelong learning, I look forward to the challenges and innovations that lie ahead.
+  </span>
+</p>
+    </div>
+
+
+
+    <div class="skills " id="skills">
+        <h1>Skills</h1>
+        <ol>
+            <li>
+                <h2 style="margin-top: 30px; ; ">PROFESSIONAL SKILLS</h2>
+            </li>
+            <ul class="lis ">
+                <li>Web Development and Design Using(html,css,JS,node,react) - 0%</li>
+                <li>Programming Fundamentals in Python,C,C++,Sql,Java</li>
+                <li>Adaptability</li>
+            </ul>
+            <li>
+                <h2>Communication</h2>
+            </li>
+            <ul class="lis ">
+                <li>Fluent in English</li>
+                <li>Basic in French</li>
+                <li>Good Communicator with team members.</li>
+            </ul>
+            <li>
+                <h2>Extra Curicular</h2>
+            </li>
+            <ul class="lis ">
+                <li>Basketball player</li>
+                <li>Gamer</li>
+                <li>High Jumper</li>
+            </ul>
+        </ol>
+    </div>
+    <div class="contact-box " id="contact-box">
+        <h1>Contact Information</h1>
+        <p>Email: <a href="mailto:your.email@example.com " class="col ">vibinkord24@gmail.com</a></p>
+        <p>Phone: +91 8903388606</p>
+        <a href="https://www.google.com/maps/place/SRI+SHAKTHI+INSTITUTE+OF+ENGINEERING+AND+TECHNOLOGY/@11.0402273,77.0716822,1112m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba85851693f4a5d:0x929165d4884224ee!8m2!3d11.0402273!4d77.0742571!16s%2Fm%2F010fd_9h?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw%3D%3D">Address:Sri Shakthi Institute of Engineering and Technology </a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+<script>
+const revealElements = document.querySelectorAll("#div1, .skills, .contact-box");
+
+window.addEventListener("scroll", () => {
+  revealElements.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100) {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
+    }
+  });
+});
+</script>
+
+
+</body>
+
+</html>
